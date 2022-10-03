@@ -55,6 +55,12 @@ update()
 
 
 function play() {
+    let cometa = document.createElement('div');
+    cometa.innerHTML = `<img src="./img/comet.png" class="comet"></img>`
+    document.body.appendChild(cometa);
+}
+
+const playSound = function() {
     let element = document.createElement('div');
     element.setAttribute('style', 'display: none');
     element.innerHTML = `
@@ -63,9 +69,6 @@ function play() {
     </audio>
     `;
     document.body.appendChild(element);
-
-    let cometa = document.createElement('div');
-    cometa.innerHTML = `<img src="./img/comet.png" class="comet"></img>`
-    document.body.appendChild(cometa);
+    document.removeEventListener('click', playSound);
 }
-
+document.addEventListener('click', playSound);

@@ -59,13 +59,13 @@ function play() {
     element.setAttribute('style', 'display: none');
     element.innerHTML = `
     <audio autoplay loop>
-        <source src="../piano/music.mp3" type="audio/mp3">
+        <source src="./piano/music.mp3" type="audio/mp3">
     </audio>
     `;
     document.body.appendChild(element);
 
     let cometa = document.createElement('div');
-    cometa.innerHTML = `<img src="/img/comet.png" class="comet"></img>`
+    cometa.innerHTML = `<img src="./img/comet.png" class="comet"></img>`
     document.body.appendChild(cometa);
 }
 

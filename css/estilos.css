@@ -1,8 +1,7 @@
 body{
-    background-color: #000;
+    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
 }
-
 
 .comet {
 
@@ -22,7 +21,9 @@ body{
 }
 
 @media (min-width: 600px) {
-
+    body{
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    }
     .comet {
         top: 90vh;
         animation: comet-move 20s 10s infinite;

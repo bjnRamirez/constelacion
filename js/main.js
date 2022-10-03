@@ -36,14 +36,14 @@ class Star{
         let r = Math.floor(Math.random() * 255)
         let g = Math.floor(Math.random() * 255)
         let b = Math.floor(Math.random() * 255)
-        return `rgba(${r}, ${g}, ${b}, 0.6)`
+        return `rgba(${r}, ${g}, ${b}, 1)`
     }
 }
 
 function update(){
 
     for(let i = 0; i < 2; i++){
-        let star = new Star(Math.random() * cw,  Math.random() * ch, 1.5 * Math.random(), this.color)
+        let star = new Star(Math.random() * cw,  Math.random() * ch, 2 * Math.random(), this.color)
         star.draw();
     }
 

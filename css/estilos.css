@@ -10,7 +10,7 @@ body{
     top: 70vh;
     left: -150px;
     width: 100px;
-    animation: comet-move 20s infinite;
+    animation: comet-move 20s 10s infinite;
 }
 
 @keyframes comet-move {
@@ -25,7 +25,7 @@ body{
 
     .comet {
         top: 90vh;
-        animation: comet-move 20s infinite;
+        animation: comet-move 20s 10s infinite;
     }
     @keyframes comet-move {
         to {

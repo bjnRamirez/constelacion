@@ -42,8 +42,8 @@ class Star{
 
 function update(){
 
-    for(let i = 0; i < 2; i++){
-        let star = new Star(Math.random() * cw,  Math.random() * ch, 2 * Math.random(), this.color)
+    for(let i = 0; i < 1; i++){
+        let star = new Star(Math.random() * cw,  Math.random() * ch, 1.5 * Math.random(), this.color)
         star.draw();
     }
 

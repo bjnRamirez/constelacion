@@ -76,7 +76,8 @@ document.addEventListener('click', playSound);
 
 function estrellas() {
     let estrellas = document.createElement('div');
-    estrellas.innerHTML = `<div class="night">
+    estrellas.classList ="night"
+    estrellas.innerHTML = `
     <div class="shooting_star"></div>
     <div class="shooting_star"></div>
     <div class="shooting_star"></div>
@@ -97,7 +98,7 @@ function estrellas() {
     <div class="shooting_star"></div>
     <div class="shooting_star"></div>
     <div class="shooting_star"></div>
-</div>`
+    `
     document.body.appendChild(estrellas);
 }
 

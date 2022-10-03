@@ -1,3 +1,8 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
@@ -6,18 +11,21 @@ body{
 .comet {
     position: absolute;
     top: 0;
-    right: -150px;
-    width: 100px;
-    animation: linear comet-move 15s 10s infinite;
+    width: 150px;
+    animation: linear comet-move 20s 10s infinite;
+    visibility: hidden;
+    z-index: 5;
 }
 
 @keyframes comet-move {
   from{
-    transform: rotate(170deg);
+    visibility: visible;
+    transform: translate(300%, 0px) rotate(170deg);
   }
     to {
         transform: translate(-170vw,90vh) rotate(170deg);
         filter: hue-rotate(360deg);
+        visibility: visible;
     }
 }
 
@@ -25,10 +33,12 @@ body{
 
     @keyframes comet-move {
       from{
-        transform: rotate(175deg);
+        visibility: visible;
+        transform: translate(600%, 0px) rotate(185deg);
       }
         to {
-          transform: translate(-170vw,90vh) rotate(175deg);
+          visibility: visible;
+          transform: translate(-170vw,90vh) rotate(185deg);
             filter: hue-rotate(360deg);
         }
     }
@@ -38,10 +48,12 @@ body{
 
   @keyframes comet-move {
     from{
-      transform: rotate(185deg);
+      visibility: visible;
+      transform: translate(1200%, 0px) rotate(175deg);
     }
       to {
-        transform: translate(-170vw,90vh) rotate(185deg);
+        visibility: visible;
+        transform: translate(-100%,90vh) rotate(175deg);
           filter: hue-rotate(360deg);
       }
   }
@@ -49,10 +61,12 @@ body{
 
 .night{
     position: absolute;
-    top: 0;
-    width: 20%;
-    height: 50%;
+    top: -10px;
+    left: -50px;
+    width: 95%;
+    height: 75%;
     transform: rotateZ(45deg);
+    overflow: hidden;
   }
 
   .shooting_star{

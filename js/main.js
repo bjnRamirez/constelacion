@@ -72,3 +72,47 @@ const playSound = function() {
     document.removeEventListener('click', playSound);
 }
 document.addEventListener('click', playSound);
+
+
+function estrellas() {
+    let estrellas = document.createElement('div');
+    estrellas.innerHTML = `<div class="night">
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+</div>`
+    document.body.appendChild(estrellas);
+}
+
+setTimeout(() =>{
+    estrellas();
+}, 16000);
+
+setTimeout(() =>{
+    estrellas();
+}, 31000);
+
+setTimeout(() =>{
+    estrellas();
+}, 44000);
+
+setTimeout(() =>{
+    estrellas();
+}, 55000);

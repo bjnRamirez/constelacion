@@ -2,3 +2,35 @@ body{
     background-color: #000;
     overflow: hidden;
 }
+
+
+.comet {
+
+    position: absolute;
+    top: 70vh;
+    left: -150px;
+    width: 100px;
+    animation: comet-move 20s infinite;
+}
+
+@keyframes comet-move {
+
+    to {
+        transform: translate(160vw,-50vh);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media (min-width: 600px) {
+
+    .comet {
+        top: 90vh;
+        animation: comet-move 20s infinite;
+    }
+    @keyframes comet-move {
+        to {
+            transform: translate(150vw,-100vh);
+            filter: hue-rotate(360deg);
+        }
+    }
+}

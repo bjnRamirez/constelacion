@@ -54,15 +54,18 @@ function update(){
 update()
 
 
-const playSound = function() {
+function play() {
     let element = document.createElement('div');
     element.setAttribute('style', 'display: none');
     element.innerHTML = `
-      <audio autoplay loop>
-        <source src="./music/piano.mp3" type="audio/mp3">
-      </audio>
+    <audio autoplay loop>
+        <source src="../piano/music.mp3" type="audio/mp3">
+    </audio>
     `;
     document.body.appendChild(element);
-    document.removeEventListener('click', playSound);
+
+    let cometa = document.createElement('div');
+    cometa.innerHTML = `<img src="/img/comet.png" class="comet"></img>`
+    document.body.appendChild(cometa);
 }
-document.addEventListener('click', playSound);
+

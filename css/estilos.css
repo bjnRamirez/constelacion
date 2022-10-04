@@ -7,16 +7,22 @@ body{
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
 }
+canvas{
+  width: 100%;
+}
 
-.comet {
+.contenedor-cometa{
   position: absolute;
   top: 0;
-
   right: 0;
-  width: 100px;
   animation: linear comet-move 20s 10s infinite;
-  z-index: 5;
-  transform: translate(100px,-10px) rotate(170deg);
+  z-index: 10;
+  transform: translate(100%) rotate(170deg);
+}
+.comet {
+  width: 100px;
+  /* transform: translate(100px,-10px) rotate(170deg); */
+
 }
 
 @keyframes comet-move {

@@ -56,7 +56,6 @@ update()
 
 function play() {
     let cometa = document.createElement('div');
-    cometa.classList = "contenedor-cometa"
     cometa.innerHTML = `<img src="./img/comet.png" class="comet"></img>`
     document.body.appendChild(cometa);
 }

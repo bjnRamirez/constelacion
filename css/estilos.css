@@ -7,26 +7,21 @@ body{
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
 }
-canvas{
-  width: 100%;
-}
 
-.contenedor-cometa{
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation: linear comet-move 20s 10s infinite;
-  z-index: 10;
-  transform: translate(100%) rotate(170deg);
-}
 .comet {
-  width: 100px;
-  /* transform: translate(100px,-10px) rotate(170deg); */
-
+    position: absolute;
+    top: 0;
+    width: 100px;
+    animation: linear comet-move 20s 10s infinite;
+    visibility: hidden;
+    z-index: 5;
 }
 
 @keyframes comet-move {
-
+  from{
+    visibility: visible;
+    transform: translate(350%, 0px) rotate(170deg);
+  }
     to {
         transform: translate(-170vw,90vh) rotate(170deg);
         filter: hue-rotate(360deg);

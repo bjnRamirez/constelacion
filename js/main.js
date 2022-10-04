@@ -117,3 +117,6 @@ setTimeout(() =>{
 setTimeout(() =>{
     estrellas();
 }, 55000);
+setTimeout(() =>{
+    estrellas();
+}, 66000);
